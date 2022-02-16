@@ -1,0 +1,27 @@
+about_image: https://images.unsplash.com/photo-1496345875659-11f7dd282d1d
+repository: danielbeeke/leemsmid
+lab: Etiam mauris tortor, ultricies at urna eget, lobortis consectetur diam. Sed
+  non arcu id nunc auctor mollis. Vestibulum ullamcorper tortor mi.
+sass:
+  sass_dir: _sass
+phone: 06-1234 1234
+url: ""
+instagram: "@leemsmid"
+collections:
+  blocks:
+    sort_by: weight
+  faq: null
+  showcases: null
+  experiments: null
+title: Leemsmid
+email: info@leemsmid.nl
+description: Leemsmid
+baseurl: ""
+slogan: |-
+  **Leem stuc**, *ecologisch* 
+
+  *verantwoord* en **esthetisch**!
+about_text: Donec in lacus in odio volutpat tincidunt vitae ac erat.
+  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+  turpis egestas. Nam sit amet neque ut justo eleifend eleifend eu sit amet
+  lectus. In tellus ex, euismod ut arcu ut, consequat lobortis massa.

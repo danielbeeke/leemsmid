@@ -1,0 +1,14 @@
+<h1 class="site-title">{{ site.title }}</h1>
+
+<button class="menu-toggle"></button>
+
+<div class="site-title-shadow"></div>
+
+<div class="site-slogan">{{ site.slogan | markdownify }}</div>
+
+
+<div class="menu">
+  {% for menu_item in menu_items %}
+    <a class="menu-item" style="--index: {{ forloop.index }};" href="#{{ menu_item.slug }}">{{ menu_item.title }}</a>
+  {% endfor %}
+</div>

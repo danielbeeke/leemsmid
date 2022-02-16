@@ -1,0 +1,12 @@
+.block {
+  clear: both;
+  padding: var(--padding);
+
+  > .title {
+    margin-bottom: 26px;
+  }
+}
+
+.block + .block {
+  margin-top: 20px;
+}

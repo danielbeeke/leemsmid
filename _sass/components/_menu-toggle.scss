@@ -1,0 +1,45 @@
+.menu-toggle {
+  display: block;
+  appearance: none;
+  border: none;
+  width: 70px;
+  padding: 30px 20px;
+  background: none;
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+
+  &::before,
+  &::after {
+    border-radius: 3px;
+    height: 3px;
+    width: 100%;
+    position: relative;
+    transition: transform .5s cubic-bezier(.49,-0.79,.09,1.19), color .5s cubic-bezier(.49,-0.79,.09,1.19);
+    content: '';
+    display: block;
+    background-color: var(--color-black);
+  }
+
+  &::after {
+    margin-top: 6px;
+  }
+}
+
+.has-menu-open {
+  .menu-toggle {
+
+    &::before {
+      transform: translateY(5px) rotate(-135deg);
+    }
+
+    &::after {
+      transform: translateY(-4px) rotate(135deg);
+    }
+
+  }
+}

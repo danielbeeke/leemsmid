@@ -1,0 +1,66 @@
+
+backend:
+  name: github
+  repo: danielbeeke/leemsmid
+  branch: master
+  base_url: https://leemsmid.nl
+
+local_backend: true
+
+media_folder: /assets
+public_folder: /assets
+
+collections:
+  - name: "faq"
+    label: "FAQ"
+    folder: "_faq"
+    create: true
+    slug: "{{question}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image", choose_url: true, media_library: { config: { multiple: true }}}
+  - name: "showcase"
+    label: "Showcase"
+    folder: "_showcases"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "markdown", required: false }
+      - { label: "Image", name: "image", widget: "image", choose_url: true, media_library: { config: { multiple: true }}}
+  - name: "experiment"
+    label: "Experiment"
+    folder: "_experiments"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown", required: false }
+      - { label: "Image", name: "image", widget: "image", choose_url: true, media_library: { config: { multiple: true }}}
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: '_config.yml'
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Site title', name: 'title', widget: 'string' }
+          - { label: 'Site slogan', name: 'slogan', widget: 'markdown' }
+          - { label: 'Leemlab', name: 'lab', widget: 'markdown' }
+          - { label: 'About Leemsmid', name: 'about_text', widget: 'markdown' }
+          - { label: "Image", name: "about_image", widget: "image", choose_url: true, media_library: { config: { multiple: false }}}
+          - { label: 'Phone number', name: 'phone', widget: 'string' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Instagram', name: 'instagram', widget: 'string' }

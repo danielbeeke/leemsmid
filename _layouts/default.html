@@ -1,0 +1,33 @@
+{% assign menu_items = site.blocks | where: "menu", true | sort: 'weight' %}
+{% assign sorted_blocks = site.blocks | sort: 'weight' %}
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    {% for block in sorted_blocks %}
+      <div class="block {{ block.slug }}" id="{{ block.slug }}">
+        <h2 class="title">{{ block.title }}</h2>
+
+        {{ block.content }}
+      </div>
+    {% endfor %}
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle')
+
+      menuToggle.addEventListener('click', () => {
+        document.body.classList.toggle('has-menu-open')
+      })
+    </script>
+
+  </body>
+</html>

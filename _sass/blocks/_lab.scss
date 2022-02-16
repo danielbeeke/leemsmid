@@ -1,0 +1,24 @@
+.block.lab {
+  padding-inline: 0;
+
+  > .title {
+    padding-inline: var(--padding);
+  }
+
+  .inner {
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+    padding-inline: var(--padding);
+    overflow-x: auto;
+  }
+
+  .description {
+    padding: var(--padding);
+    margin-top: var(--padding);
+
+    p {
+      margin: 0;
+    }
+  }
+}

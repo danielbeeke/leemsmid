@@ -1,0 +1,16 @@
+---
+title: Het leemlab
+menu: true
+weight: 3
+---
+<div class="inner">
+{% for experiment in site.experiments %}
+<div class="teaser experiment">
+  <img alt="{{ experiment.title }}" src="//images.weserv.nl/?url={{ experiment.image }}&w=300&h=300&fit=cover&a=attention">
+  <h3 class="title">{{ experiment.title }}</h3>
+  {{ experiment.description | markdownify }}
+</div>
+{% endfor %}
+</div>
+
+<div class="description">{{ site.lab | markdownify }}</div>

@@ -1,0 +1,12 @@
+.site-slogan {
+  clear: both;
+  padding-inline: var(--padding);
+  font-size: var(--font-size-small);
+  position: relative;
+  z-index: 11;
+  background-color: var(--background-color);
+
+  p {
+    margin: 0;
+  }
+}

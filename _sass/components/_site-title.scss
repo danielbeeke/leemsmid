@@ -1,0 +1,18 @@
+.site-title {
+  position: sticky;
+  top: 0;
+  z-index: 100;  
+  padding: var(--padding);
+  background-color: var(--background-color);
+}
+
+.site-title-shadow {
+  height: 10px;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,9,121,0.5284314409357493) 35%, rgba(0,212,255,0) 100%); 
+  position: sticky;
+  width: 100%;
+  top: 72px;
+  opacity: .1;
+  z-index: 10;
+  margin-top: -10px;
+}

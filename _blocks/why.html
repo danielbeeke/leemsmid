@@ -1,0 +1,15 @@
+---
+title: Waarom leem?
+menu: true
+weight: 2
+---
+{% for faq in site.faq %}
+<details class="teaser faq" href="#{{ showcase.slug }}">
+  <summary><span class="title">{{ faq.title }}</span></summary>
+  <div class="answer">
+    {{ faq.answer }}
+  </div>
+  <img alt="{{ faq.title }}" src="//images.weserv.nl/?url={{ faq.image }}&w=600&h=600&fit=cover&a=attention">
+</details>
+{% endfor %}
+<button class="button small show-all-faqs">Toon alles</button>

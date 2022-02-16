@@ -1,0 +1,15 @@
+---
+title: Showcases
+menu: true
+weight: 1
+---
+<div class="inner">
+{% for showcase in site.showcases %}
+<a class="teaser showcase" href="#{{ showcase.slug }}">
+  <span class="title">{{ showcase.title }}</span>
+  <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=300&h=300&fit=cover&a=attention">
+</a>
+{% endfor %}
+<div class="pad"></div>
+</div>
+<a href="/showcases" class="button small goto-showcases">Bekijk showcases</a>
