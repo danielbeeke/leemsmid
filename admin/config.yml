@@ -3,7 +3,7 @@ backend:
   name: github
   repo: danielbeeke/leemsmid
   branch: master
-  base_url: https://leemsmid.danielbeeke.nl
+  base_url: https://leemsmid.danielbeeke.nl/admin
 
 local_backend: true
 
