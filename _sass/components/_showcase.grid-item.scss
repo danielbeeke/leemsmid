@@ -1,10 +1,7 @@
-.showcase.teaser {
+.showcase.grid-item {
+  display: block;
+  overflow: hidden;
   position: relative;
-
-  img  {
-    max-width: 100%;
-    display: block;
-  }
 
   .title {
     position: absolute;
@@ -17,4 +14,10 @@
     margin: 8px;
   }
 
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
 }

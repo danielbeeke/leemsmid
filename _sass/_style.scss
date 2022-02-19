@@ -8,13 +8,18 @@
 @import 'components/site-slogan';
 @import 'components/button';
 @import 'components/scroll-shadow';
+@import 'components/photoswipe';
+@import 'components/showcases-grid';
 
-@import 'components/showcase.teaser';
 @import 'components/faq.teaser';
 @import 'components/experiment.teaser';
+@import 'components/showcase.teaser';
+@import 'components/showcase.grid-item';
+@import 'components/showcase.full';
 
 @import 'blocks/block';
 @import 'blocks/why';
 @import 'blocks/lab';
 @import 'blocks/contact';
 @import 'blocks/showcases';
+@import 'blocks/who';

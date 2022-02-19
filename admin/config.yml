@@ -30,10 +30,16 @@ collections:
     editor:
       preview: true
     fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'showcase' }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "markdown", required: false }
-      - { label: "Image", name: "image", widget: "image", choose_url: true, media_library: { config: { multiple: true }}}
+      - { label: "Teaser image", name: "image", widget: "image", choose_url: true, media_library: { config: { multiple: false }}}
+      - label: "Gallery"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
   - name: "experiment"
     label: "Experiment"
     folder: "_experiments"
@@ -61,6 +67,9 @@ collections:
           - { label: 'Leemlab', name: 'lab', widget: 'markdown' }
           - { label: 'About Leemsmid', name: 'about_text', widget: 'markdown' }
           - { label: "Image", name: "about_image", widget: "image", choose_url: true, media_library: { config: { multiple: false }}}
+          - { label: 'Accent', name: 'accent', widget: 'color' }
           - { label: 'Phone number', name: 'phone', widget: 'string' }
           - { label: 'Email', name: 'email', widget: 'string' }
           - { label: 'Instagram', name: 'instagram', widget: 'string' }
+          - { label: 'Contact', name: 'contact', widget: 'markdown' }
+          - { label: "Menu background", name: "menu_image", widget: "image", choose_url: true, media_library: { config: { multiple: false }}}

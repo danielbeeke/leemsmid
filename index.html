@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign sorted_blocks = site.blocks | sort: 'weight' %}
+
+{% for block in sorted_blocks %}
+<div class="block {{ block.slug }}" id="{{ block.slug }}">
+  <h2 class="title">{{ block.title }}</h2>
+
+  {{ block.content }}
+</div>
+{% endfor %}
+
+<div id="bottom"></div>

@@ -5,8 +5,22 @@
   position: relative;
   z-index: 11;
   background-color: var(--background-color);
+  margin-bottom: 20px;
+  color: var(--color-gray);
 
   p {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .site-slogan {
+    clear: none;
+    float: left;
+    z-index: 8;
+    width: 100%;
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 5px;
   }
 }

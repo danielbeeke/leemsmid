@@ -1,18 +1,51 @@
 .site-title {
   position: sticky;
   top: 0;
+  line-height: 1.25;
   z-index: 100;  
   padding: var(--padding);
   background-color: var(--background-color);
+
+  a {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
+  img {
+    width: 34px;
+    margin-right: 11px;
+    margin-bottom: -5px;
+    margin-left: -1px;
+  }
 }
 
 .site-title-shadow {
   height: 10px;
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(9,9,121,0.5284314409357493) 35%, rgba(0,212,255,0) 100%); 
   position: sticky;
-  width: 100%;
-  top: 72px;
-  opacity: .1;
+  width: 100vw;
+  top: 80px;
+  margin-left: 50%;
+  transform: translateX(-50vw);
+  opacity: .2;
   z-index: 10;
   margin-top: -10px;
+}
+
+@media screen and (min-width: $tablet) {
+  .site-title {
+    float: left;
+    margin-right: -100%;
+    z-index: 10;
+    position: fixed;
+    padding-block: 5px;
+  }
+
+  .site-title-shadow {
+    top: 57px;
+    position: fixed;
+    margin-top: 0;
+    left: 0;
+    margin-bottom: 30px;
+  }
 }

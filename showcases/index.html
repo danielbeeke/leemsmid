@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="inner">
+  <h2 class="title">Showcases</h2>
+
+  <div class="showcases-grid">
+    {% for showcase in site.showcases %}
+    <a class="showcase teaser" href="{{ showcase.url }}" data-cropped="true" data-pswp-width="1200" data-pswp-height="1200" >
+      <span class="title">{{ showcase.title }}</span>
+      <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=600&h=600&fit=cover&a=attention">
+    </a>
+    {% endfor %}  
+  </div>  
+</div>

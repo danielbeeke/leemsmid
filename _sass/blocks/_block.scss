@@ -1,12 +1,35 @@
 .block {
   clear: both;
   padding: var(--padding);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: var(--background-color);
+  position: relative;
+  z-index: 2;
+  scroll-margin: 82px;
 
   > .title {
     margin-bottom: 26px;
   }
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 .block + .block {
-  margin-top: 20px;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: $tablet) {
+  .block {
+    padding-bottom: 70px;
+  }
+
+  .block + .block {
+    padding-top: 70px;
+  }
+  
 }

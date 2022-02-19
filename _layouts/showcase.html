@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="showcase full">
+
+  <a class="back-to-showcases button small" href="/">Terug naar overzicht</a>
+
+  <h2 class="title"><strong>Showcase: </strong>{{ page.title }}</h2>
+
+  {{ page.description | markdownify }}
+
+  <div class="images">
+    <a class="image clearfix" href="//images.weserv.nl/?url={{ page.image }}&w=1200&h=1200&fit=cover&a=attention" data-pswp-width="1200" data-pswp-height="1200" data-cropped="true" >
+      <img alt="{{ page.title }}" src="//images.weserv.nl/?url={{ page.image }}&w=600&h=600&fit=cover&a=attention">
+    </a>
+  
+    {% for image in page.images %}
+      <a class="image clearfix" href="//images.weserv.nl/?url={{ image }}&w=1200&h=1200&fit=cover&a=attention" data-pswp-width="1200" data-pswp-height="1200" data-cropped="true" >
+        <img alt="{{ page.title }}" src="//images.weserv.nl/?url={{ image }}&w=600&h=600&fit=cover&a=attention">
+      </a>
+    {% endfor %}  
+  </div>
+
+</div>

@@ -2,10 +2,11 @@
 {% assign sorted_blocks = site.blocks | sort: 'weight' %}
 
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en" style="--color-accent: {{ site.accent }};">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Leemsmid | {{ site.slogan | markdownify | strip_html }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
@@ -13,21 +14,10 @@
 
     {% include header.html %}
 
-    {% for block in sorted_blocks %}
-      <div class="block {{ block.slug }}" id="{{ block.slug }}">
-        <h2 class="title">{{ block.title }}</h2>
+    {{ content }}
 
-        {{ block.content }}
-      </div>
-    {% endfor %}
-
-    <script>
-      const menuToggle = document.querySelector('.menu-toggle')
-
-      menuToggle.addEventListener('click', () => {
-        document.body.classList.toggle('has-menu-open')
-      })
-    </script>
-
+    <script src="/scripts/why.js"></script>
+    <script src="/scripts/menu.js"></script>
+    <script type="module" src="/scripts/showcases.js"></script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+.showcase.full {
+  padding: var(--padding);
+  clear: both;
+
+  img {
+     max-width: 100%;
+     float: left;
+     margin-bottom: var(--padding);
+  }
+
+  .back-to-showcases {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .showcase.full {
+    
+    .images {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .title {
+      strong {
+        font-style: normal;
+      }
+    }
+  }
+}

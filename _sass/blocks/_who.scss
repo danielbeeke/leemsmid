@@ -1,0 +1,44 @@
+.block.who {
+  position: relative;
+
+  img {
+    shape-outside: circle();
+    float: right;
+    max-width: 35vw;
+    width: 100%;
+    border-radius: 50%;
+    margin: 10px;
+    margin-right: 0;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .block.who {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .title {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 0;
+      // border-top-left-radius: 50%;
+      // border-bottom-left-radius: 50%;
+      width: 240px;
+      shape-outside: none;
+    } 
+
+    .text {
+      max-width: 50%;
+    }
+  }
+}

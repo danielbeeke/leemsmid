@@ -3,13 +3,31 @@ title: Showcases
 menu: true
 weight: 1
 ---
-<div class="inner">
-{% for showcase in site.showcases %}
-<a class="teaser showcase" href="#{{ showcase.slug }}">
-  <span class="title">{{ showcase.title }}</span>
-  <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=300&h=300&fit=cover&a=attention">
-</a>
-{% endfor %}
-<div class="pad"></div>
+{% assign sliced_showcases = site.showcases | slice: 0, 6 %}
+{% assign more_sliced_showcases = site.showcases | slice: 6, 1000 %}
+
+<div class="inner" style="--span: {{ more_sliced_showcases | size | modulo: 4 }};">
+
+  {% for showcase in sliced_showcases %}
+  <a class="grid-item showcase" href="{{ showcase.url }}">
+    <span class="title">{{ showcase.title }}</span>
+    <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=1280&h=1280&fit=cover&a=attention">
+  </a>
+  {% endfor %}
+
+  {% for showcase in more_sliced_showcases %}
+  <a class="grid-item showcase more" href="{{ showcase.url }}">
+    <span class="title">{{ showcase.title }}</span>
+    <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=1280&h=1280&fit=cover&a=attention">
+  </a>
+  {% endfor %}
+
+  <div class="pad"></div>
 </div>
-<a href="/showcases" class="button small goto-showcases">Bekijk showcases</a>
+
+{% if more_sliced_showcases %}
+<button class="button small show-more-showcases">
+  <span class="collapsed">Bekijk alle showcases</span>
+  <span class="expanded">Bekijk minder showcases</span>
+</button>
+{% endif %}

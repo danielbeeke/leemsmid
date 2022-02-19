@@ -1,4 +1,15 @@
-about_image: https://images.unsplash.com/photo-1496345875659-11f7dd282d1d
+about_image: https://web.fastcrm.rocks//files/NNSTUKA/photo/12_thuisstudie-stukadoor.jpg
+accent: "#d1d1a4"
+contact: >-
+  ### **De Leemsmid**
+
+
+  Wilt u meer weten over leemstuc? Heeft u een muur of een huis dat leemstuc kan gebruiken? Bel gerust. Ik kom graag langs om zaken door te spreken en voorlichting te geven over leem.
+
+
+  * **BTW** 1234 5678
+
+  * **KVK** NL 1234 1234
 repository: danielbeeke/leemsmid
 lab: Etiam mauris tortor, ultricies at urna eget, lobortis consectetur diam. Sed
   non arcu id nunc auctor mollis. Vestibulum ullamcorper tortor mi.
@@ -11,17 +22,26 @@ collections:
   blocks:
     sort_by: weight
   faq: null
-  showcases: null
+  showcases:
+    output: true
   experiments: null
 title: Leemsmid
 email: info@leemsmid.nl
+menu_image: https://afresco.be/wp/wp-content/gallery/leem/leem-008_43.jpg
 description: Leemsmid
 baseurl: ""
-slogan: |-
-  **Leem stuc**, *ecologisch* 
+slogan: "**Leem stuc**, *ecologisch* *verantwoord* en **esthetisch**!"
+about_text: >-
+  Tom Smit is de Leemsmid. 
 
-  *verantwoord* en **esthetisch**!
-about_text: Donec in lacus in odio volutpat tincidunt vitae ac erat.
-  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-  turpis egestas. Nam sit amet neque ut justo eleifend eleifend eu sit amet
-  lectus. In tellus ex, euismod ut arcu ut, consequat lobortis massa.
+
+  Een stucadoor die van alle markten thuis is, maar zich vooral wil focussen op leemstuc.
+
+
+  Basisleem, leemfinish (in de leemstuc)
+
+  Maar ook gips, cement en kalk
+
+  Naast dat houdt hij zich ook bezig met het installeren van systemen zoals isolatiepanelen en timmerwerk.
+
+  Dus een nieuw plafond met gipsplaten timmeren, studwandjes en afwerking, koofjes.

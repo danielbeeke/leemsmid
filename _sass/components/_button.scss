@@ -6,10 +6,16 @@
   text-decoration: none;
   border-radius: 50px;
   border: none;
+  display: inline-flex;
   cursor: pointer;
 
   &.small {
     font-size: var(--font-size-small);
     padding: 10px 22px;
+  }
+
+  &.light {
+    background-color: var(--color-white);
+    color: var(--color-black);  
   }
 }

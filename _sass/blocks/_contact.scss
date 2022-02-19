@@ -1,20 +1,53 @@
 .block.contact {
-  color: var(--color-white);
   z-index: 100;
-  font-size: var(--font-size-small);
-  padding: var(--padding);
-  background-color: var(--color-black);
+  padding-inline: var(--padding);
+  width: 100%;
+  z-index: 0;
+  background: url('/assets/footer.jpg') no-repeat bottom center;
+  padding-bottom: 240px;
+  background-size: 100%;
 
-  .inner {
+  .buttons {
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .block.contact {
     display: flex;
-    justify-content: space-evenly;
-  }
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: 900px;
+    padding-bottom: 520px;
 
-  .title {
-    display: none;
-  }
+    .title {
+      flex: 0 0 100%;
+      text-align: center;
+    }
 
-  a {
-    color: var(--color-white);
+    .buttons,
+    .text {
+      flex: 0 0 30%;
+    }
+
+    .text {
+      text-align: left;
+      order: 5;
+
+      p:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .buttons {
+      margin-top: 0;
+    }
   }
 }
