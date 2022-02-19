@@ -9,10 +9,13 @@ for (const link of links) {
   link.addEventListener('click', (event) => {
     const href = link.getAttribute('href')
     const isOnPage = href.substring(0, 2) === '/#'
-    document.body.classList.remove('has-menu-open')
 
     if (isOnPage) {
       let element = document.querySelector(href.substring(1))
+
+      setTimeout(() => {
+        document.body.classList.remove('has-menu-open')
+      }, 500)
 
       if (element) {
         event.preventDefault()

@@ -1,5 +1,5 @@
 .menu {
-  width: 100vw;
+  width: calc(100vw - 70px);
   height: 100vh;
   position: fixed;
   overflow-x: hidden;
@@ -10,7 +10,7 @@
   pointer-events: none;
   display: flex;
   flex-direction: column;
-  transform: translateX(calc(100% + 20px));
+  transform: translateX(calc(-100% - 20px));
   transition: all .4s ease-in-out;
   justify-content: center;
   padding: 50px 0;
@@ -24,40 +24,49 @@
   }
 }
 
+body:after {
+  content: '';
+  display: block;
+  transition: opacity .3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
 .menu-item {
   color: var(--color-black);
   text-decoration: none;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 30px;
   font-family: 'Merriweather', serif;
-  font-size: 28px;
+  font-size: 20px;
   transform-origin: right bottom;
+  border-left: 4px solid transparent;
+
+  &.active {
+    border-left: 4px solid var(--color-black);
+    font-weight: bold;
+  }
 }
 
 .menu .button {
   transform-origin: right bottom;
-  margin-left: 57px;
+  margin-left: 27px;
 }
 
 .has-menu-open {
+  &:after {
+    opacity: .8;
+  }
+
   .menu {
     transform: translateX(0);
     pointer-events: all;
-
-    .button:nth-last-child(2) {
-      animation: appear .3s .7s both;
-      animation-timing-function: cubic-bezier(.49,-0.79,.09,1.19);
-    }
-
-    .button:nth-last-child(1) {
-      animation: appear .3s .8s both;
-      animation-timing-function: cubic-bezier(.49,-0.79,.09,1.19);
-    }
-
-  }
-
-  .menu-item {
-    animation: appear .3s calc(.2s + var(--index) * .08s) both;
-    animation-timing-function: cubic-bezier(.49,-0.79,.09,1.19);
   }
 }
 
@@ -106,7 +115,6 @@
       width: var(--menu-bar-width);
       height: 5px;
       background-color: var(--color-accent);
-      // background: linear-gradient(to left, white 0%, white 20%, var(--color-accent) 20.1%, var(--color-accent) 80%, white 80.1%);
       content: '';
       position: absolute;
       left: var(--menu-bar-left);
@@ -125,6 +133,7 @@
       font-family: 'Merriweather Sans', sans-serif;
       color: var(--color-gray);
       transition: all .3s ease-in-out;
+      border-left: none;
 
       &::before {
         content: attr(data-text);

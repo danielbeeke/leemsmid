@@ -23,6 +23,8 @@
     width: 100vw;
     padding-inline: var(--padding);
     overflow-x: auto;
+    overflow-y: hidden;
+
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
