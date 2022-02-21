@@ -1,5 +1,6 @@
 .block.lab {
   padding-inline: 0;
+  position: relative;
 
   .background {
     position: absolute;
@@ -45,6 +46,11 @@
   .block.lab {
     .inner {
       width: 100%;
+      scrollbar-width: auto;
+      
+      &::-webkit-scrollbar {
+        display: block;
+      }  
     }
 
     .description {

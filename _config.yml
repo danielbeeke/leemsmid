@@ -1,5 +1,5 @@
+color_accent: "#c5d9bc"
 about_image: /assets/img_3121.jpg
-accent: "#d1cda4"
 contact: >-
   ### **De Leemsmid**
 
@@ -13,11 +13,13 @@ contact: >-
 repository: danielbeeke/leemsmid
 lab: Etiam mauris tortor, ultricies at urna eget, lobortis consectetur diam. Sed
   non arcu id nunc auctor mollis. Vestibulum ullamcorper tortor mi.
+instagram_feed: uMytQGrvbKV1c5Vn
 sass:
   sass_dir: _sass
 phone: 06-1234 1234
 url: ""
-instagram: "@leemsmid"
+color_dark: "#163d26"
+instagram: wilmavis
 collections:
   blocks:
     sort_by: weight
@@ -26,6 +28,8 @@ collections:
     output: true
   experiments: null
 title: Leemsmid
+color_light: "#fefefe"
+footer_image: /assets/footer.jpg
 email: info@leemsmid.nl
 menu_image: https://afresco.be/wp/wp-content/gallery/leem/leem-008_43.jpg
 description: Leemsmid

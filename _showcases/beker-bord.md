@@ -1,4 +1,5 @@
 ---
+published: true
 layout: showcase
 title: Beker, bord
 date: 2022-02-16T17:55:18.657Z

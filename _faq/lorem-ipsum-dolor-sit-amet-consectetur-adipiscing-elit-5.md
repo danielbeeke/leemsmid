@@ -10,5 +10,6 @@ answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
   condimentum mollis, lorem odio accumsan lacus, convallis tempus diam dolor a
   diam. Ut velit ligula, dictum vitae erat eget, aliquam ornare tellus. In et
   rhoncus justo.
+published: true
 image: https://images.unsplash.com/photo-1643575102128-0d6b42fbdda1
 ---

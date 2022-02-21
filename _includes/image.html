@@ -1,0 +1,4 @@
+<img 
+  alt="{{ include.alt | default: 'Image' }}" 
+  class="{{ include.class | default: 'image' }}" 
+  src="//images.weserv.nl/?url={{ include.src | absolute_url }}&w={{ include.width | default: 300 }}&h={{ include.height | default: 300 }}&fit=cover&a=attention&default={{ include.src | absolute_url }}">

@@ -2,11 +2,10 @@
   position: relative;
 
   img {
-    shape-outside: circle();
     float: right;
     max-width: 35vw;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 20px;
     margin: 10px;
     margin-right: 0;
   }
@@ -30,11 +29,7 @@
     }
 
     img {
-      border-radius: 0;
-      // border-top-left-radius: 50%;
-      // border-bottom-left-radius: 50%;
       width: 240px;
-      shape-outside: none;
     } 
 
     .text {

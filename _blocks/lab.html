@@ -5,13 +5,7 @@ weight: 4
 ---
 
 <div class="inner">
-{% for experiment in site.experiments %}
-<div class="teaser experiment">
-  <img alt="{{ experiment.title }}" src="//images.weserv.nl/?url={{ experiment.image }}&w=300&h=300&fit=cover&a=attention">
-  <h3 class="title">{{ experiment.title }}</h3>
-  {{ experiment.description | markdownify }}
-</div>
-{% endfor %}
+  <rssapp-list id="uMytQGrvbKV1c5Vn"></rssapp-list><script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script>
 </div>
 
 <div class="description">{{ site.lab | markdownify }}</div>

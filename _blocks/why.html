@@ -4,7 +4,8 @@ menu: true
 weight: 3
 ---
 <div class="inner">
-{% for faq in site.faq %}
+{% assign published_faqs = site.faq | where: 'published', true %}
+{% for faq in published_faqs %}
 <details class="teaser faq" href="#{{ showcase.slug }}">
   <summary><span class="title">{{ faq.question }}</span></summary>
   <div class="answer">
@@ -18,5 +19,5 @@ weight: 3
 </div>
 <button class="button small show-all-faqs">
   <span class="expanded">Toon minder</span>
-  <span class="collapsed">Toon alles ({{ site.faq | size }})</span>
+  <span class="collapsed">Toon alles ({{ site.faq | where: 'published', true | size }})</span>
 </button>

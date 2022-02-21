@@ -3,17 +3,23 @@
   padding-inline: var(--padding);
   width: 100%;
   z-index: 0;
-  background: url('/assets/footer.jpg') no-repeat bottom center;
-  padding-bottom: 240px;
   background-size: 100%;
+  padding-bottom: 0;
 
   .buttons {
     margin-top: 30px;
     text-align: right;
+    margin-bottom: 30px;
   }
 
   .button {
     margin-bottom: 10px;
+  }
+
+  .footer-image {
+    width: calc(100% + 32px);
+    margin-inline: -16px;
+    display: block;
   }
 }
 
@@ -24,8 +30,6 @@
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
-    background-size: 900px;
-    padding-bottom: 520px;
 
     .title {
       flex: 0 0 100%;
@@ -39,15 +43,21 @@
 
     .text {
       text-align: left;
-      order: 5;
 
       p:first-child {
         margin-top: 0;
       }
+
+      margin-bottom: 30px;
     }
 
     .buttons {
       margin-top: 0;
+    }
+
+    .footer-image {
+      margin: 0;
+      width: 790px;
     }
   }
 }

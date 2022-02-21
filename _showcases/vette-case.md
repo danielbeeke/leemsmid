@@ -1,4 +1,5 @@
 ---
+published: true
 title: Vette case
 date: 2022-02-16T19:54:54.265Z
 description: Vette case

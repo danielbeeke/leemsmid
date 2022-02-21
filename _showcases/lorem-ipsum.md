@@ -1,4 +1,5 @@
 ---
+published: true
 layout: showcase
 title: Lorem ipsum
 date: 2022-02-16T11:26:21.836Z

@@ -3,22 +3,22 @@ title: Showcases
 menu: true
 weight: 1
 ---
-{% assign sliced_showcases = site.showcases | slice: 0, 6 %}
-{% assign more_sliced_showcases = site.showcases | slice: 6, 1000 %}
+{% assign sliced_showcases = site.showcases | where: 'published', true | slice: 0, 6 %}
+{% assign more_sliced_showcases = site.showcases | where: 'published', true | slice: 6, 1000 %}
 
 <div class="inner" style="--span: {{ more_sliced_showcases | size | modulo: 4 }};">
 
   {% for showcase in sliced_showcases %}
   <a class="grid-item showcase" href="{{ showcase.url }}">
     <span class="title">{{ showcase.title }}</span>
-    <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=1280&h=1280&fit=cover&a=attention">
+    {% include image.html src=showcase.image alt=showcase.title width=1280 height=1280 %}
   </a>
   {% endfor %}
 
   {% for showcase in more_sliced_showcases %}
   <a class="grid-item showcase more" href="{{ showcase.url }}">
     <span class="title">{{ showcase.title }}</span>
-    <img alt="{{ showcase.title }}" src="//images.weserv.nl/?url={{ showcase.image }}&w=1280&h=1280&fit=cover&a=attention">
+    {% include image.html src=showcase.image alt=showcase.title width=1280 height=1280 %}
   </a>
   {% endfor %}
 

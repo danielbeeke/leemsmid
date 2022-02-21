@@ -1,4 +1,5 @@
 ---
+published: true
 title: Bladiebla
 date: 2022-02-16T17:52:17.058Z
 description: Lorem ipsum
