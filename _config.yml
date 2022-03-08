@@ -1,5 +1,41 @@
+title: Leemsmid
+slogan: "**Pretty leem!**"
 color_accent: "#c5d9bc"
+color_dark: "#163d26"
+color_light: "#fefefe"
+lab: Etiam mauris tortor, ultricies at urna eget, lobortis consectetur diam. Sed
+  non arcu id nunc auctor mollis. Vestibulum ullamcorper tortor mi.
+about_text: >-
+  Mijn naam is Tom Smit en ik heb als doel om de reguliere bouw ecologischer in
+  te richten en dat toegankelijk te maken voor iedere klant. Het is een
+  prachtige manier om te werken met natuurlijke materialen die fantastisch
+  inzetbaar zijn aan de binnen en buitenkant van uw huis. Ik ben gediplomeerd
+  stukadoor in conventionele materialen (gips en cement) en ik heb mij daarna
+  gespecialiseerd in de natuurlijke materialen (leem). Ik sta achter deze
+  materialen omdat wanneer we de keuze hebben en we voor een gezondere keuze
+  kiezen, we onze eigen steen bijdragen aan een betere toekomst.
+
+
+
+
+  De materialen die ik verwerk zijn altijd damp open, dit zorgt dat het huis kan blijven 'ademen' en met een eindafwerking als leem zorg je dat er altijd een stabiel binnenhuis klimaat is waardoor dit prettiger voelt om in te leven.
+
+
+  Ambachtelijke materialen
+
+
+
+
+  Visie beknopt tom smit
+
+
+  Verdere missie ergens anders lezen
 about_image: /assets/img_3121.jpg
+footer_image: /assets/footer.jpg
+phone: 06-1234 1234
+email: info@leemsmid.nl
+instagram: wilmavis
+instagram_feed: uMytQGrvbKV1c5Vn
 contact: >-
   ### **De Leemsmid**
 
@@ -11,15 +47,9 @@ contact: >-
 
   * **KVK** NL 1234 1234
 repository: danielbeeke/leemsmid
-lab: Etiam mauris tortor, ultricies at urna eget, lobortis consectetur diam. Sed
-  non arcu id nunc auctor mollis. Vestibulum ullamcorper tortor mi.
-instagram_feed: uMytQGrvbKV1c5Vn
 sass:
   sass_dir: _sass
-phone: 06-1234 1234
-url: "https://leemsmid.danielbeeke.nl"
-color_dark: "#163d26"
-instagram: wilmavis
+url: https://leemsmid.danielbeeke.nl
 collections:
   blocks:
     sort_by: weight
@@ -27,25 +57,6 @@ collections:
   showcases:
     output: true
   experiments: null
-title: Leemsmid
-color_light: "#fefefe"
-footer_image: /assets/footer.jpg
-email: info@leemsmid.nl
 menu_image: https://afresco.be/wp/wp-content/gallery/leem/leem-008_43.jpg
 description: Leemsmid
 baseurl: ""
-slogan: "**Leem stuc**, *ecologisch* *verantwoord* en **esthetisch**!"
-about_text: >-
-  Tom Smit is de Leemsmid. 
-
-
-  Een stucadoor die van alle markten thuis is, maar zich vooral wil focussen op leemstuc.
-
-
-  Basisleem, leemfinish (in de leemstuc)
-
-  Maar ook gips, cement en kalk
-
-  Naast dat houdt hij zich ook bezig met het installeren van systemen zoals isolatiepanelen en timmerwerk.
-
-  Dus een nieuw plafond met gipsplaten timmeren, studwandjes en afwerking, koofjes.
