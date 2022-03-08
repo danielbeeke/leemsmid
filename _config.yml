@@ -3,8 +3,9 @@ slogan: "**Pretty leem!**"
 color_accent: "#c5d9bc"
 color_dark: "#163d26"
 color_light: "#fefefe"
-lab: Etiam mauris tortor, ultricies at urna eget, lobortis consectetur diam. Sed
-  non arcu id nunc auctor mollis. Vestibulum ullamcorper tortor mi.
+lab: In het leemlab houd ik je op de hoogte van verschillende expirimenten om
+  het leemproduct nog te verbeteren, beide in constructieve integriteit en
+  estetisch.
 about_text: >-
   Mijn naam is Tom Smit en ik heb als doel om de reguliere bouw ecologischer in
   te richten en dat toegankelijk te maken voor iedere klant. Het is een
@@ -40,12 +41,12 @@ contact: >-
   ### **De Leemsmid**
 
 
-  Wilt u meer weten over leemstuc? Heeft u een muur of een huis dat leemstuc kan gebruiken? Bel gerust. Ik kom graag langs om zaken door te spreken en voorlichting te geven over leem.
+  Wilt u meer weten over ecologisch renoveren? Heeft u een muur of een huis dat leemstuc kan gebruiken? Bel gerust. Ik kom graag langs om te kijken wat allemaal mogelijk is en voorlichting te geven over deze producten.
 
 
-  * **BTW** 1234 5678
+  * **BTW** NL002225479B98
 
-  * **KVK** NL 1234 1234
+  * **KVK** 74691740
 repository: danielbeeke/leemsmid
 sass:
   sass_dir: _sass
